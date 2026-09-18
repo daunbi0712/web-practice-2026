@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>정의림 | 웹 개발자 포트폴리오 & 문의하기</title>
+  <meta name="description" content="정의림의 포트폴리오 소개 및 문의하기 페이지입니다. 웹 개발 관련 문의는 아래 폼을 통해 남겨주세요." />
+
+  <meta property="og:title" content="정의림 | 웹 개발자 포트폴리오 & 문의하기" />
+  <meta property="og:description" content="정의림의 포트폴리오 소개 및 문의하기 페이지입니다. 웹 개발 관련 문의는 아래 폼을 통해 남겨주세요." />
+  <meta property="og:url" content="https://your-github-id.github.io/repo-name/week3/index.html" />
+  <meta property="og:type" content="website" />
+
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="bb.jpeg" alt="대표이미지" width="100px"/>
+      <span>정의림</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#profile">소개</a></li>
+        <li><a href="#contact">문의하기</a></li>
+      </ul>
+    </nav>
+  </header>
+<hr>
+  <main>
+
+    <section id="profile" class="profile-section">
+      <img
+        src="aa.webp"
+        alt="정의림의 프로필 사진: 컴퓨터공학을 전공하는 대학생"
+        width="200px"
+      />
+      <div>
+        <h1>안녕하세요, 정의림입니다</h1>
+        <p>
+          컴퓨터공학을 전공하는 대학생이며,
+          개발자로 일하고 싶습니다. 
+        </p>
+      </div>
+    </section>
+
+<hr>
+    <section id="contact">
+      <h2>문의하기</h2>
+      <form action="#" method="post">
+
+        <div class="form-row">
+          <label for="name">이름 <span class="required">*</span></label>
+          <input type="text" id="name" name="name" placeholder="홍길동" required />
+        </div>
+
+        <div class="form-row">
+          <label for="email">이메일 <span class="required">*</span></label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required />
+        </div>
+
+        <div class="form-row">
+          <label for="inquiry-type">문의 유형 <span class="required">*</span></label>
+          <select id="inquiry-type" name="inquiry-type" required>
+            <option value="" disabled selected>문의 유형을 선택해주세요</option>
+            <option value="general">일반 문의</option>
+            <option value="collaboration">협업 제안</option>
+            <option value="bug">버그/오류 신고</option>
+            <option value="etc">기타</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="message">문의 내용 <span class="required">*</span></label>
+          <textarea id="message" name="message" placeholder="문의하실 내용을 입력해주세요." required></textarea>
+        </div>
+
+        <button type="submit">보내기</button>
+      </form>
+    </section>
+
+  </main>
+<br><hr>
+  <footer>
+    <p>&copy; 2026 정의림. All rights reserved.</p>
+    <p>Email: <a href="mailto:hello@email.com">hello@email.com</a></p>
+  </footer>
+
+</body>
+</html>
