@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* 헤더 */
+.ddd {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.aaa {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.aaa li {
+    margin: 0 15px;
+}
+
+.banner {
+    height: 300px;
+    background: linear-gradient(to right, rgb(79, 32, 32), rgb(0, 73, 34));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    position: relative;
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: center;
+}
+
+.img {
+    height: 150px;
+    background-color: lightgray;
+    line-height: 150px;
+}
+
+.badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.new {
+    background-color: green;
+}
+
+.sale {
+    background-color: red;
+}
