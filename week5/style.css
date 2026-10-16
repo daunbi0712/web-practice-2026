@@ -3,76 +3,93 @@ body {
     font-family: sans-serif;
 }
 
-/* 헤더 */
-.ddd {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-.aaa {
-    display: flex;
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.aaa li {
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
     margin: 0 15px;
 }
 
-.banner {
+#ddd {
     height: 300px;
-    background: linear-gradient(to right, rgb(79, 32, 32), rgb(0, 73, 34));
+    background: linear-gradient(to right, skyblue, pink);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.title {
-    text-align: center;
-}
-
-.list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+#aaa {
     padding: 20px;
 }
 
-.item {
-    position: relative;
-    border: 1px solid gray;
-    padding: 10px;
+#aaa h4 {
     text-align: center;
 }
 
-.img {
-    height: 150px;
-    background-color: lightgray;
-    line-height: 150px;
+.box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.box li {
+    position: relative;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.box img {
+    width: 100%;
+}
+
+.box strong,
+.box span {
+    display: block;
 }
 
 .badge {
     position: absolute;
     top: 0;
     left: 0;
+    background-color: red;
     color: white;
     padding: 5px 10px;
     font-size: 12px;
 }
 
-.new {
-    background-color: green;
-}
-
-.sale {
-    background-color: red;
+footer {
+    background-color: lightgray;
+    padding: 20px;
+    margin-top: 20px;
 }
